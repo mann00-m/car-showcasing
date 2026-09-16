@@ -1,0 +1,174 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 18px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1000;
+
+  color: white;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+/* Logo */
+.nav-menu {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Navigation */
+.nav ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.nav ul li {
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+  white-space: nowrap;
+
+  transition: color 0.3s ease;
+}
+
+.nav ul li:hover {
+  color: #00e5ff;
+}
+
+/* Contact */
+.contact {
+  padding: 8px 18px;
+
+  border-radius: 20px;
+
+  background: #00e5ff;
+  color: #000;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.contact:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .nav {
+    padding: 16px 30px;
+  }
+
+  .nav ul {
+    gap: 18px;
+  }
+
+  .nav ul li {
+    font-size: 14px;
+  }
+
+  .nav-menu {
+    font-size: 23px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .nav {
+    padding: 14px 18px;
+
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    font-size: 22px;
+  }
+
+  .nav ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px 16px;
+  }
+
+  .nav ul li {
+    font-size: 13px;
+  }
+
+  .contact {
+    padding: 6px 13px;
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================
+   VERY SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .nav {
+    padding: 12px 12px;
+  }
+
+  .nav-menu {
+    font-size: 20px;
+  }
+
+  .nav ul {
+    gap: 8px 12px;
+  }
+
+  .nav ul li {
+    font-size: 12px;
+  }
+
+  .contact {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+}

@@ -1,0 +1,117 @@
+/* Main Hero Container */
+.Hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Hero Text */
+.hero-text p {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0.3rem 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Explore Button */
+.hero-explore {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-explore p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero-explore img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.hero-explore:hover {
+  background: rgba(255, 165, 0, 0.85);
+}
+
+.hero-explore:hover img {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Dots Section */
+.hero-dot-play {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Dots */
+.hero-dots {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-dots li {
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Active Dot */
+.hero-dots li.active {
+  background: orange;
+  transform: scale(1.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-text p {
+    font-size: 2.2rem;
+  }
+
+  .hero-explore p {
+    font-size: 1rem;
+  }
+
+  .hero-explore img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text p {
+    font-size: 1.6rem;
+  }
+
+  .hero-dots li {
+    width: 12px;
+    height: 12px;
+  }
+}
